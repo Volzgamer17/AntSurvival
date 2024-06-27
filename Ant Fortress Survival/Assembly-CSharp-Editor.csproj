@@ -1057,6 +1057,30 @@
       <Project>{0AFA4AF4-A82E-9D8C-D338-BCA383E4815F}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{D9E08CAC-5952-3B74-2207-941652D7A96F}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{4D49D1FE-C1FC-0281-8B3C-734D6D1E5F2E}</Project>
+      <Name>CFXRRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
+      <Project>{67AD34DD-1928-EFB7-2DA3-01E958BC429F}</Project>
+      <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{80764ADD-5540-18CF-9FC1-CCAF2BB1F98A}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{E545524E-2994-6899-13A2-D300FA342D26}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{8D4BE0CD-C093-1EE3-B947-822A2C5271CC}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)/Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

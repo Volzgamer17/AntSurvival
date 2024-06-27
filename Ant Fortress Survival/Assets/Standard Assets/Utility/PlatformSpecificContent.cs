@@ -11,40 +11,59 @@ namespace UnityStandardAssets.Utility
     [ExecuteInEditMode]
 #endif
     public class PlatformSpecificContent : MonoBehaviour
+#if UNITY_EDITOR
+        , UnityEditor.Build.IActiveBuildTargetChanged
+#endif
     {
         private enum BuildTargetGroup
         {
             Standalone,
             Mobile
         }
-
-        [SerializeField] private BuildTargetGroup m_BuildTargetGroup;
-        [SerializeField] private GameObject[] m_Content = new GameObject[0];
-        [SerializeField] private MonoBehaviour[] m_MonoBehaviours = new MonoBehaviour[0];
-        [SerializeField] private bool m_ChildrenOfThisObject;
-
+        //disable warning about unassigned variable, as it is assigned by the serialization.
+#pragma warning disable CS0649
+        [SerializeField]
+        private BuildTargetGroup m_BuildTargetGroup;
+        [SerializeField]
+        private GameObject[] m_Content = new GameObject[0];
+        [SerializeField]
+        private MonoBehaviour[] m_MonoBehaviours = new MonoBehaviour[0];
+        [SerializeField]
+        private bool m_ChildrenOfThisObject;
+#pragma warning restore CS0649
+        
 #if !UNITY_EDITOR
 	void OnEnable()
 	{
 		CheckEnableContent();
 	}
+#else
+        public int callbackOrder
+        {
+            get
+            {
+                return 1;
+            }
+        }
 #endif
 
 #if UNITY_EDITOR
 
         private void OnEnable()
         {
-            EditorUserBuildSettings.activeBuildTargetChanged += Update;
             EditorApplication.update += Update;
         }
 
 
         private void OnDisable()
         {
-            EditorUserBuildSettings.activeBuildTargetChanged -= Update;
             EditorApplication.update -= Update;
         }
 
+        public void OnActiveBuildTargetChanged(BuildTarget previousTarget, BuildTarget newTarget)
+        {
+            CheckEnableContent();
+        }
 
         private void Update()
         {

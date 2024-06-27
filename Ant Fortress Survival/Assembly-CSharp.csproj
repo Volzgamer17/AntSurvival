@@ -61,9 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Mimic/Scripts/CylinderMesh.cs" />
+    <Compile Include="Assets/UnityTechnologies/Let&apos;s Try Shooter/Scripts/CompletedScripts/RayViewerComplete.cs" />
     <Compile Include="Assets/MouseLook.cs" />
     <Compile Include="Assets/Mimic/Scripts/Movement.cs" />
     <Compile Include="Assets/Mimic/Scripts/Mimic.cs" />
+    <Compile Include="Assets/UnityTechnologies/Let&apos;s Try Shooter/Scripts/CompletedScripts/ShootableBox.cs" />
+    <Compile Include="Assets/UnityTechnologies/Let&apos;s Try Shooter/Scripts/CompletedScripts/RayCastShootComplete.cs" />
     <Compile Include="Assets/Movement3D (1).cs" />
     <Compile Include="Assets/Mimic/Scripts/Leg.cs" />
   </ItemGroup>
@@ -71,10 +74,15 @@
     <None Include="Assets/WorldMaterialsFree/Shaders/WorldMatHDRPFree.shader" />
     <None Include="Assets/WorldMaterialsFree/Shaders/WorldMatLiteFree.shader" />
     <None Include="Assets/WorldMaterialsFree/Shaders/WorldMatFree.shader" />
+    <None Include="Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Shaders/CFXR_SETTINGS.cginc" />
+    <None Include="Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Shaders/CFXR.cginc" />
     <None Include="Assets/Mimic/README.txt" />
     <None Include="Assets/Mimic/Materials/Shaders/SimplexNoise3D.hlsl" />
     <None Include="Assets/Mimic/Materials/Shaders/NoiseUtils.hlsl" />
+    <None Include="Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Texts/_Make your own text effect.txt" />
+    <None Include="Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Shaders/CFXR_PASSES.cginc" />
     <None Include="Assets/WorldMaterialsFree/Shaders/WorldMatURPFree.shader" />
+    <None Include="Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Shaders/CFXR_URP.cginc" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1002,6 +1010,30 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{922D8149-0AAE-AC8F-8687-E155F703E9CB}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{D9E08CAC-5952-3B74-2207-941652D7A96F}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{4D49D1FE-C1FC-0281-8B3C-734D6D1E5F2E}</Project>
+      <Name>CFXRRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
+      <Project>{67AD34DD-1928-EFB7-2DA3-01E958BC429F}</Project>
+      <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{80764ADD-5540-18CF-9FC1-CCAF2BB1F98A}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{E545524E-2994-6899-13A2-D300FA342D26}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{8D4BE0CD-C093-1EE3-B947-822A2C5271CC}</Project>
+      <Name>KinoBloom.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)/Microsoft.CSharp.targets" />

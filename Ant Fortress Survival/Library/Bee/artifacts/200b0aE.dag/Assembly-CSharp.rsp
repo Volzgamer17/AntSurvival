@@ -327,6 +327,12 @@
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXR.WelcomeScreen.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXRDemo.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXREditor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXRRuntime.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/KinoBloom.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/ToonyColorsPro.Demo.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -358,6 +364,9 @@
 "Assets/Mimic/Scripts/Movement.cs"
 "Assets/MouseLook.cs"
 "Assets/Movement3D (1).cs"
+"Assets/UnityTechnologies/Let's Try Shooter/Scripts/CompletedScripts/RayCastShootComplete.cs"
+"Assets/UnityTechnologies/Let's Try Shooter/Scripts/CompletedScripts/RayViewerComplete.cs"
+"Assets/UnityTechnologies/Let's Try Shooter/Scripts/CompletedScripts/ShootableBox.cs"
 -langversion:9.0
 
 /deterministic
